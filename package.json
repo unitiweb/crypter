@@ -1,0 +1,19 @@
+{
+  "name": "lf-crypter",
+  "version": "0.1.0",
+  "description": "Library for encrypting and decrypting data",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davetorres001/lf-crypter.git",
+    "directory": "unitiweb/lf-crypter"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dave Torres <dave@unitiweb.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cryptr": "^4.0.2"
+  }
+}
