@@ -14,7 +14,7 @@ npm install unitiweb-crypter
 
 #### Instantiate Class
 
-Before using you need to instantiate the class and give it a secret
+Library for encrypting, decrypting and encoding strings.
 
 ```js
 // A random secret key
