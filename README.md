@@ -1,3 +1,7 @@
+[![Build Status](https://circleci.com/gh/unitiweb/crypter.svg?style=shield)](https://circleci.com/gh/unitiweb/crypter)
+[![Coverage Status](https://coveralls.io/repos/github/unitiweb/crypter/badge.svg?branch=master)](https://coveralls.io/github/unitiweb/crypter?branch=master)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
+
 # UnitiWeb's Crypter
 
 This is a class that will encrypt, decrypt, and encode strings
