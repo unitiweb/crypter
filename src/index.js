@@ -1,8 +1,8 @@
 const Cryptr = require('cryptr')
-const sha256 = require("crypto-js/sha256")
+const sha256 = require('crypto-js/sha256')
 
 class Crypter {
-  constructor(secret) {
+  constructor (secret) {
     this.cryptr = null
 
     // A secred is only required for the encrypt and decrypt
@@ -23,7 +23,7 @@ class Crypter {
    * @return string
    */
   encrypt (value) {
-    if (!this.cryptr) throw new Error('No secret is supplied for LFCrypter')
+    if (!this.cryptr) throw new Error('No secret was supplied for Crypter')
     return this.cryptr.encrypt(value)
   }
 
@@ -35,7 +35,7 @@ class Crypter {
    * @return string
    */
   decrypt (value) {
-    if (!this.cryptr) throw new Error('No secret is supplied for LFCrypter')
+    if (!this.cryptr) throw new Error('No secret was supplied for Crypter')
     return this.cryptr.decrypt(value)
   }
 
