@@ -17,11 +17,11 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-#      - run:
-#          name: Install OpenSSL
-#          command: |
-#            sudo apt update
-#            sudo apt install build-essential checkinstall zlib1g-dev -y
+      - run:
+          name: Install OpenSSL
+          command: |
+            sudo apt update
+            sudo apt install build-essential checkinstall zlib1g-dev -y
 
       - run:
           name: Install Dependencies
@@ -40,6 +40,9 @@ jobs:
       - run:
           name: Code Coverage Tests
           command: npm run test:coverage
+      - run:
+          name: Report Coverage Results
+          command: npm run test:coverage:report
       - run:
           name: Code Lint Tests
           command: npm run test:lint
