@@ -1,6 +1,6 @@
 {
   "name": "unitiweb-crypter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Library for encrypting, decrypting and encoding strings",
   "repository": {
     "type": "git",
@@ -8,6 +8,8 @@
     "directory": "unitiweb/crypter"
   },
   "main": "src/index.js",
+  "author": "Dave Torres <dave@unitiweb.com>",
+  "license": "MIT",
   "scripts": {
     "test": "mocha 'test/*Test.js'",
     "test:coverage": "nyc npm run test",
@@ -15,19 +17,6 @@
     "test:coverage:report:local": "nyc report --reporter=lcov --reporter=html && open ./coverage/index.html",
     "test:lint": "eslint src/**",
     "test:lint:fix": "eslint --fix src/**"
-  },
-  "author": "Dave Torres <dave@unitiweb.com>",
-  "license": "MIT",
-  "nyc": {
-    "check-coverage": true,
-    "all": true,
-    "include": [
-      "src/**/*.js"
-    ],
-    "branches": 100,
-    "lines": 100,
-    "functions": 100,
-    "statements": 100
   },
   "dependencies": {
     "crypto-js": "^3.1.9-1",
